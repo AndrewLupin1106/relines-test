@@ -306,8 +306,8 @@ const UserTable: FC = () => {
               <CardHeader
                 action={
                   <Box width={150}>
-                    <Button onClick={handleClickRefresh}>Refresh</Button>
-                    <Button onClick={handleClickNext}>Next</Button>
+                    <Button onClick={handleClickRefresh}>New</Button>
+                    <Button onClick={handleClickNext}>Add</Button>
                   </Box>
                 }
                 title="User List"
@@ -439,7 +439,7 @@ const UserTable: FC = () => {
                               <TableCell>
                               {
                                 user.buttonShow ? 
-                                    <Button onClick={() => handleClickPLeft(user.id)}>To the left List</Button>
+                                    <Button onClick={() => handleClickPLeft(user.id)}>To the User List</Button>
                                 : ''
                               }
                               </TableCell>
